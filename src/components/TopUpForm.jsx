@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { loadStripe } from '@stripe/stripe-js';
-import { Elements } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import StripePayment from './StripePayment';
 import PayPalPayment from './PayPalPayment';
