@@ -10,9 +10,6 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
-        border: '#e2e8f0',
-        background: '#ffffff',
-        foreground: '#0f172a',
         primary: {
           50: '#eff6ff',
           100: '#dbeafe',
