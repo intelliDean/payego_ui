@@ -170,7 +170,7 @@ function TransferForm() {
             } else {
                 alert('Internal transfer initiated!');
             }
-            navigate('/');
+            navigate('/dashboard');
         } catch (err) {
             setError(err.response?.data?.message || `Failed to process ${transferType} transfer`);
         } finally {

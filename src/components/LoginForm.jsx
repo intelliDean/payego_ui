@@ -63,7 +63,7 @@ function LoginForm({ setAuth }) {
             const storage = rememberMe ? localStorage : sessionStorage;
             storage.setItem('jwt_token', response.data.token);
             setAuth(true);
-            navigate('/');
+            navigate('/dashboard');
         } catch (err) {
             const message = err.response?.data?.message;
             setError(message === 'Invalid credentials' ? 'Oops, wrong keys to the Payego castle!' : message || 'Login crashed. Try again!');
@@ -85,7 +85,7 @@ function LoginForm({ setAuth }) {
             const storage = rememberMe ? localStorage : sessionStorage;
             storage.setItem('jwt_token', response.data.token);
             setAuth(true);
-            navigate('/');
+            navigate('/dashboard');
         } catch (err) {
             setError(err.response?.data?.message || 'Google login flopped. Try again!');
         } finally {

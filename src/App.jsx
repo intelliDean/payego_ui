@@ -52,10 +52,10 @@ function App() {
                 </nav>
                 <div className="container mx-auto px-4 py-8">
                 <Routes>
-                    <Route path="/page" element={<LandingPage />} />
+                    <Route path="/" element={!isAuthenticated ? <LandingPage /> : <Navigate to="/dashboard" />} />
                     <Route path="/login" element={!isAuthenticated ? <LoginForm setAuth={setIsAuthenticated} /> : <Navigate to="/" />} />
                     <Route path="/register" element={!isAuthenticated ? <RegisterForm setAuth={setIsAuthenticated} /> : <Navigate to="/" />} />
-                    <Route path="/" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
+                    <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />} />
                     <Route path="/top-up" element={isAuthenticated ? <TopUpForm /> : <Navigate to="/login" />} />
                     <Route path="/banks" element={isAuthenticated ? <BankList /> : <Navigate to="/login" />} />
                     <Route path="/add-bank" element={isAuthenticated ? <AddBankForm /> : <Navigate to="/login" />} />

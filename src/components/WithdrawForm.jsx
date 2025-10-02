@@ -91,7 +91,7 @@ function WithdrawForm() {
                 }
             );
             console.log(`Withdrawal initiated: transaction_id=${response.data.transaction_id}`);
-            navigate('/');
+            navigate('/dashboard');
         } catch (err) {
             setError(err.response?.data?.message || 'Failed to process withdrawal');
         } finally {

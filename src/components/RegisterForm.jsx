@@ -133,7 +133,7 @@ function RegisterForm({ setAuth }) {
                 { headers: { 'Content-Type': 'application/json' } }
             );
             setAuth(true);
-            navigate('/');
+            navigate('/dashboard');
         } catch (err) {
             setError(err.response?.data?.message || 'Verification failed');
             setLoading(false);

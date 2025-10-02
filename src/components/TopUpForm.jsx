@@ -406,7 +406,7 @@ function TopUpForm() {
 
     const handleCancel = () => {
         setPaymentData(null);
-        navigate('/');
+        navigate('/dashboard');
     };
 
     return (
