@@ -147,7 +147,7 @@ function SuccessPage() {
                       Payment Successful!
                     </h2>
                     <p className="text-gray-600 text-sm">
-                      Your wallet’s feeling heavier!
+                      Your wallet's feeling heavier!
                     </p>
                   </div>
                   <div className="mb-6 p-4 bg-gray-50 rounded-lg space-y-2">
